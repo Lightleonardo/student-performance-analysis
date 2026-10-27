@@ -30,3 +30,7 @@ Mean and median are almost identical and skewness is near zero, so the distribut
 - Skewness: 0.01
 
 Mean and median are almost identical and skewness is near zero, so attendance is also roughly symmetric around 80%, with a spread of about 11.5 percentage points.
+
+## Sampling differences
+
+The population mean Exam_Score is 67.24. Means of 20 samples of size n=30 ranged from 66.47 to 69.30, while means of 20 samples of size n=500 ranged only from 67.00 to 67.51. The smaller samples swing much more widely around the population mean than the larger ones, illustrating the Central Limit Theorem: larger samples produce more stable, reliable estimates of the population mean.
