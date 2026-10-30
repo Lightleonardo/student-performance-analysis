@@ -34,3 +34,7 @@ Mean and median are almost identical and skewness is near zero, so attendance is
 ## Sampling differences
 
 The population mean Exam_Score is 67.24. Means of 20 samples of size n=30 ranged from 66.47 to 69.30, while means of 20 samples of size n=500 ranged only from 67.00 to 67.51. The smaller samples swing much more widely around the population mean than the larger ones, illustrating the Central Limit Theorem: larger samples produce more stable, reliable estimates of the population mean.
+
+## Spreadsheet cross-check
+
+The same statistics were recomputed in `spreadsheet/cross_check.xlsx` using `=AVERAGE`, `=MEDIAN`, `=STDEV.S`, and `=CORREL` formulas on the imported CSV data. The spreadsheet results matched the pandas results (Exam_Score mean 67.24, median 67, sample std 3.89; Hours_Studied vs. Exam_Score correlation 0.45). Pandas `.std()` defaults to sample standard deviation (ddof=1), so it matches Excel's `STDEV.S`; using population std (ddof=0 / `STDEV.P`) would not match.
